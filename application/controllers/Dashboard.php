@@ -345,9 +345,17 @@ class Dashboard extends CI_Controller {
 			$this->load->library('upload',$config);
 			if(!$this->upload->do_upload('gambar')){
 				echo "upload gagal1"; die();
-			}elseif(!$this->upload->do_upload('gambar2')){
+			}else {
+				$gambar1 = $this->upload->data('file_name');
+			}
+
+			if(!$this->upload->do_upload('gambar2')){
 				echo "upload gagal2"; die();
-			}elseif(!$this->upload->do_upload('gambar3')){
+			}else{
+				$gambar2 = $this->upload->data('file_name');
+			}
+
+			if(!$this->upload->do_upload('gambar3')){
 				echo "upload gagal3"; die();
 			}else{
 				$data = array(
@@ -355,8 +363,8 @@ class Dashboard extends CI_Controller {
 					'tgl_konsul' => $tgl_konsul,
 					'namaDokter' => $namaDokter,
 					'diagnosa'   => $diagosa,
-					'gambar'     => $this->upload->data('file_name'),
-					'gambar2'     => $this->upload->data('file_name'),
+					'gambar'     => $gambar1,
+					'gambar2'     => $gambar2,
 					'gambar3'     => $this->upload->data('file_name')
 				);
 				$this->Models->insert_rekamData($data);
