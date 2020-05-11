@@ -44,15 +44,15 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
             <div class="media-body">
-              <h3>Jagakarsa, Jakarta Selatan</h3>
-              <p>DKI Jakarta, Indonesia</p>
+              <h3>Kelapa Dua, Depok</h3>
+              <p>Depok, Jawa barat - Indonesia</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
             <div class="media-body">
-              <h3>Besty Ghina</h3>
-              <p>+62-877-7135-3715</p>
+              <h3>Sekretariat Team Arrogant</h3>
+              <p>Jl. Pamaan No. 23</p>
             </div>
           </div>
           <div class="media contact-info">
